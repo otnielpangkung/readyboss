@@ -12,6 +12,7 @@ import mainPage from "./screen/mainPage"
 import takePhoto from "./screen/takePhoto"
 import takeBarcode from "./screen/takeBarcode"
 import afterPhoto from "./screen/afterPhoto"
+import historyPage from "./screen/historyPage"
 
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
           <Stack.Screen name="takePhoto" component={takePhoto} options={{ headerShown: false }}/>
           <Stack.Screen name="takeBarcode" component={takeBarcode} options={{ headerShown: false }}/>
           <Stack.Screen name="afterPhoto" component={afterPhoto} options={{ headerShown: false }}/>
+          <Stack.Screen name="historyPage" component={historyPage} options={{ headerShown: false }}/>
         </Stack.Navigator>
     </NavigationContainer>
   );

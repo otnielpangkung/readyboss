@@ -67,11 +67,10 @@ export default function App(props) {
     // Tombl. {lokasi 2 = }
     <View style={styles.container}>
       <View style={styles.headBody}>
-        <TouchableOpacity onPress={() => props.navigation.navigate('history')}>
-        <Text>History</Text>
+        <TouchableOpacity onPress={() => props.navigation.navigate('historyPage')}>
+          <Text>History</Text>
 
         </TouchableOpacity>
-          {/* <Text style={styles.name}>{props.route?.params?.username || ''}</Text> */}
           <Text style={styles.name}>{username} </Text>
           <TouchableOpacity onPress={async () => 
         { await AsyncStorage.clear()
@@ -169,8 +168,6 @@ export default function App(props) {
 
         }}>
           <Text style={styles. konfirmText}>Konfirmasi Absen</Text></TouchableOpacity> }
-       
-
       </View>
      
     </View>
